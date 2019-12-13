@@ -1,0 +1,28 @@
+{
+  "name": "discord-greeter-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "build": "^0.1.4",
+    "cjs": "0.0.11",
+    "discord.js": "^11.5.1",
+    "discord.js-musicbot-addon": "^13.8.1",
+    "internal": "^1.0.8",
+    "lib": "^4.0.5",
+    "loader.js": "^4.7.0",
+    "m3u8stream": "^0.6.3",
+    "main": "^1000.0.1",
+    "modules": "^0.4.0",
+    "node-gyp": "^6.0.1",
+    "opusscript": "0.0.7",
+    "parse-time": "^0.1.4",
+    "ytdl-core": "^1.0.3"
+  }
+}
