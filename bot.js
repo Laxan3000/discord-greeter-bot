@@ -85,6 +85,4 @@ function sendEmbed(message) {
   message.delete()
 }
 
-bot.login(process.env.token);
-
 client.login(auth.token);
