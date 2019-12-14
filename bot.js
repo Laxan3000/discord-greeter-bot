@@ -6,6 +6,12 @@ var auth = []
 
 auth.token = "NjUyMTk2NjA0MDYwODkzMjA0.Xek7hA.AMKsIpQ27WhJvJEKrfrxTtTjTWk"
 
+client.on('ready', () => {
+
+  console.log('I am ready!');
+
+});
+
 client.music = require("discord.js-musicbot-addon");
 
 client.music.start(client, {
