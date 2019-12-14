@@ -4,7 +4,7 @@ const client = new Discord.Client();
 
 var auth = []
 
-auth.token = "NjUyMTk2NjA0MDYwODkzMjA0.Xek7hA.AMKsIpQ27WhJvJEKrfrxTtTjTWk"
+auth.token = "NjUyMTk2NjA0MDYwODkzMjA0.XfToZg.4kxla1__VhIIAyrDYmTsxCs1rBM"
 
 client.on('ready', () => {
 
@@ -19,7 +19,7 @@ client.music.start(client, {
   botPrefix: "lx!"
 });
 
-client.login("NjUyMTk2NjA0MDYwODkzMjA0.Xek7hA.AMKsIpQ27WhJvJEKrfrxTtTjTWk");
+client.login("NjUyMTk2NjA0MDYwODkzMjA0.XfToZg.4kxla1__VhIIAyrDYmTsxCs1rBM");
 
 client.on('message', async msg => {
   if(msg.author.id === client.user.id) return;
