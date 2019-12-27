@@ -4,10 +4,10 @@ const client = new Discord.Client();
 const { existsSync, appendFileSync } = require('fs')
 
 if (!existsSync('./auth.json')) {
-  appendFileSync('./auth.json','{\n"token": "TOKEN_HERE"\n}')
+  appendFileSync('./auth.json','{\n"token": "TOKEN_HERE"\n"youtube": "YOUTUBE_V3_API"\n"prefix": "PREFIX_HERE"\n}')
 }
 
-var { token } = require('./auth.json')
+var { token, youtube, prefix } = require('./auth.json')
 
 client.on('ready', () => {
 
@@ -18,8 +18,8 @@ client.on('ready', () => {
 client.music = require("discord.js-musicbot-addon");
 
 client.music.start(client, {
-  youtubeKey: "YOUTUBEKEY_HERE",
-  botPrefix: "lx!"
+  youtubeKey: youtube,
+  botPrefix: prefix
 });
 
 client.on('message', async msg => {
