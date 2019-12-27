@@ -22,8 +22,6 @@ client.music.start(client, {
   botPrefix: "lx!"
 });
 
-client.login("YOUR_TOKEN_HERE");
-
 client.on('message', async msg => {
   if(msg.author.id === client.user.id) return;
 
