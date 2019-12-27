@@ -1,10 +1,13 @@
 const Discord = require('discord.js');
 const ytdl = require('ytdl-core');
 const client = new Discord.Client();
+const { existsSync, appendFileSync } = require('fs')
 
-var auth = []
+if (!existsSync('./auth.json')) {
+  appendFileSync('./auth.json','{\n"token": "TOKEN_HERE"\n}')
+}
 
-auth.token = "YOUR_TOKEN_HERE"
+var { token } = require('./auth.json')
 
 client.on('ready', () => {
 
@@ -121,4 +124,4 @@ function sendEmbed(message) {
   message.delete()
 }
 
-client.login(auth.token);
+client.login(token);
