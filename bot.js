@@ -4,7 +4,7 @@ const client = new Discord.Client();
 
 var auth = []
 
-auth.token = "NjUyMTk2NjA0MDYwODkzMjA0.XgDLTA.na8-ezY62awwEskCLeE8GN_HdcY"
+auth.token = "YOUR_TOKEN_HERE"
 
 client.on('ready', () => {
 
@@ -15,11 +15,11 @@ client.on('ready', () => {
 client.music = require("discord.js-musicbot-addon");
 
 client.music.start(client, {
-  youtubeKey: "AIzaSyCehuVXcKsvbxt8aRNiFS5ERtEHHO0lMBw",
+  youtubeKey: "YOUTUBEKEY_HERE",
   botPrefix: "lx!"
 });
 
-client.login("NjUyMTk2NjA0MDYwODkzMjA0.XgDLTA.na8-ezY62awwEskCLeE8GN_HdcY");
+client.login("YOUR_TOKEN_HERE");
 
 client.on('message', async msg => {
   if(msg.author.id === client.user.id) return;
